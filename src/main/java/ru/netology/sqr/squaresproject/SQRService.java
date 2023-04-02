@@ -2,16 +2,16 @@ package ru.netology.sqr.squaresproject;
 
 public class SQRService {
 
-    public int calcNumbers(int x, int y) {
-        int a = 0;
+    public int calcNumbers(int upperBound, int lowerBound) {
+        int numberOfSqrs = 0;
         for (int i = 10; i <= 99; i++) {
-            if (i * i >= x) {
-                if (i * i <= y) {
-                    a++;
+            if (i * i >= upperBound) {
+                if (i * i <= lowerBound) {
+                    numberOfSqrs++;
                     continue;
                 }
             }
         }
-        return a;
+        return numberOfSqrs;
     }
 }

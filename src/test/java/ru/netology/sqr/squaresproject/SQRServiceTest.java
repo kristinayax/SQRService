@@ -19,8 +19,8 @@ public class SQRServiceTest {
     public void calcNumberOfSqrsInexact() {
         SQRService service = new SQRService();
 
-        int expected = 7;
-        int actual = service.calcNumbers(100, 200);
+        int expected = 13;
+        int actual = service.calcNumbers(100, 500);
 
         Assertions.assertEquals(expected, actual);
     }
